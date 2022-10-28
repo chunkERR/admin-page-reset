@@ -19,14 +19,21 @@
 }
 
 
-.dash-title {
+.dash-title, .dash-menu {
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-
+gap: 10px;
 }
 
+.dash-title {
+    margin-top: 20px;
+}
+
+.dash-menu {
+    margin-top: 30px;
+}
 
 .content {
     display: grid;
@@ -37,4 +44,5 @@ align-items: center;
 .right {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    background-color: #D3D3D3;
 }
