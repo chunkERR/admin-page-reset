@@ -22,9 +22,10 @@
 .dash-title, .dash-menu {
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: flex-start;
 align-items: center;
 gap: 10px;
+margin-left: 20px;
 }
 
 .dash-title {
@@ -222,4 +223,11 @@ hr {
     width: 96%;               
     background-color: black;
     height: 1px;
+  }
+
+  .card-left, .card-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
