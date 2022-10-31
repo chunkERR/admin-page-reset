@@ -8,14 +8,14 @@
 .container {
   display: grid;
   grid-template-columns: 20% 80%;
-  height: 100vh;
 }
 
 .dashboard {
   background-color: #3700b3;
   color: white;
-  height: 100vh;
-  min-width: 200px;
+  height: 100%;
+  min-width: 20%;
+  padding-bottom: 20px;
 }
 
 .dash-title,
@@ -146,11 +146,13 @@ button:hover {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   background-color: #d3d3d3;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: minmax(200px, 50%) minmax(200px, 50%);
   /* grid-template-rows: 30px 1fr 1fr 1fr; */
 }
 
@@ -167,6 +169,7 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  height: 175px;
 }
 
 .project-icons {
@@ -248,4 +251,5 @@ hr {
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  margin-bottom: 50px;
 }
